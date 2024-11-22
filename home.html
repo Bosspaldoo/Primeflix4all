@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Your Destination</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="home.css">
+<link rel="stylesheet" href="load.css">
+</head>
+<body>
+  <div id="loaning-screen">
+      <img src="images/logo.webp" alt="Loading..." />
+      <div class="progress-bar">
+          <div class="progress"></div>
+      </div>
+  </div>
+  <script>
+  window.addEventListener("load",()=>{document.body.classList.add("loaded")});document.addEventListener("click",e=>{if(e.target.closest("a")){e.preventDefault(),document.body.style.opacity="0",setTimeout(()=>{window.location.href=e.target.closest("a").href},999)}});
+  </script>
+    <div class="background-animation"></div>
+    <div class="container">
+        <h1>Welcome to PrimeFlix</h1>
+        <div class="options-container">
+            <a href="movies.html" class="option">
+                <i class="fas fa-film"></i>
+                <span>Movies</span>
+            </a>
+            <!--<a href="even.html" class="option">
+              <i class="fas fa-clapperboard"></i>
+                <span>Smile 2</span>
+            </a>-->
+            <a href="shows.html" class="option">
+                <i class="fas fa-tv"></i>
+                <span>TV Show</span>
+            </a>
+            <a href="tvplus.html" class="option">
+                <i class="fas fa-satellite-dish"></i>
+                <span>Live TV</span>
+            </a>
+            <a href="requested.html" class="option">
+                <i class="fas fa-search"></i>
+                <span>Requested</span>
+            </a>
+            <a href="trailer.html" class="option">
+                <i class="fas fa-video"></i>
+                <span>Trailers</span>
+            </a>
+            <a href="tutorial.html" class="option">
+              <i class="fas fa-chalkboard-teacher"></i>
+                <span>Finding movie/show</span>
+            </a>
+            <a href="index.html" class="option">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </a>
+        </div>
+    </div>
+    <script src="load.js"></script>
+</body>
+</html>

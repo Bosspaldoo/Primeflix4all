@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta property="og:title" content="PrimeFlix - Watch Free Movies and TV Series Online"/>
+<meta property="og:description" content="Explore a world of free movies and TV series online at PrimeFlix. Enjoy a variety of genres, from classics to the latest releases, all available for streaming."/>
+<meta property="og:url" content="https://PrimeFlix4all.site/home.html"/>
+<meta property="og:image" content="https://i.postimg.cc/YCWDLrdF/th.webp"/>
+<meta name="description" content="Watch free movies and TV series online with multiple genres at PrimeFlix. Discover classics and the latest releases for streaming."/>
+<meta name="keywords" content="Free movies, Watch free TV series, Online streaming, Movie genres, Latest releases, Classic films"/>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet" href="stylt.css"/>
+<link rel="stylesheet" href="modal.css">
+</head>
+<body>
+  <div class="modal" id="myModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span>Enjoy MF...</span>
+        <span class="close" onclick="closeModal()">×</span>
+      </div>
+      <div class="spinner" id="spinner"></div>
+      <iframe id="modalIframe" src=""></iframe>
+      <div class="nav-buttons">
+        <button class="arrow-btn" onclick="navigate(-1)"><i class="fas fa-arrow-left"></i></button>
+        <button class="go-btn" onclick="goToSite()"><i class="fas fa-expand"></i></button>
+        <button class="arrow-btn" onclick="navigate(1)"><i class="fas fa-arrow-right"></i></button>
+      </div>
+    </div>
+  </div>
+  <div class="fallback" id="fallback">
+    <p>Warning: The following content is intended for adults only!</p>
+    <button class="show-modal-btn" onclick="reopenModal()"><i class="fas fa-eye"></i> Oh yeah!!!</button>
+</div>
+    <nav class="bottom-nav">
+      <a href="https://dashflix.top" class="nav-item">
+        <i class="fas fa-home"></i> Home
+      </a>
+      <a href="https://dashflix.top/home" class="nav-item">
+        <i class="fas fa-film"></i> Movies
+      </a>
+      <a href="https://dashflix.top/shows" class="nav-item">
+        <i class="fas fa-tv"></i> Shows
+      </a>
+      <a href="https://dashflix.top/trailer" class="nav-item">
+        <i class="fas fa-video"></i> Trailers
+      </a>
+      <a href="https://dashflix.top/requested" class="nav-item">
+        <i class="fas fa-list"></i> Requested
+      </a>
+      <a href="#" class="nav-item" id="more-menu">
+        <i class="fas fa-ellipsis-h"></i> More
+      </a>
+
+      <div id="more-links" class="more-links">
+        <a href="https://freedomwall.top">
+          <i class="fas fa-otter"></i> Anime
+        </a>
+        <a href="https://dashtoons.xyz">
+          <i class="fas fa-book-open"></i> Comics
+        </a>
+        <a href="https://kabayan.top">
+          <i class="fas fa-theater-masks"></i> Drama
+        </a>
+      </div>
+    </nav>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const moreMenu = document.getElementById('more-menu');
+        const moreLinks = document.getElementById('more-links');
+
+        moreMenu.addEventListener('click', function(event) {
+          event.preventDefault(); // Prevent the default anchor action
+          moreLinks.classList.toggle('show'); // Toggle visibility by adding/removing the 'show' class
+        });
+      });
+    </script>
+    <script src="modal.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
